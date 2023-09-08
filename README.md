@@ -22,10 +22,4 @@ This project showcases Ireland's Covid-19 statistics, including vaccination data
 
 ![Screenshot 1](compare_counties.png)
 
-## License
 
-This project is for personal showcase purposes only and is not available for download or distribution.
-
----
-
-**Note:** This project is not open for contributions or usage by others.
