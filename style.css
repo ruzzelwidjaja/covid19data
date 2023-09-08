@@ -1,0 +1,154 @@
+body {
+    background-color:white;
+    margin: 0 auto;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+
+h1 {
+    color: #7A66EE;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+h2 {
+    color: #7A66EE;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 500;
+    font-size: 25px;
+    display: inline;
+    border-bottom: 3.5px solid #7A66EE;
+    padding-bottom: 3px;
+    text-align: center;
+    align-items: center;
+
+}
+
+#h3 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #7A66EE;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 500;
+    font-size: 25px;
+    display:inline;
+    border-bottom: 3.5px solid #7A66EE;
+    padding-bottom: 3px;
+    text-align: center;
+    align-items: center;
+}
+
+select {
+    cursor: pointer;
+}
+
+.value {
+    font-family: 'Baloo 2', cursive;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.column {  
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding-bottom: 0px;
+    }
+
+.row:after {
+    content: "";
+    display: inline;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    border-collapse: collapse;
+    width: 90%;
+    margin: 0 auto;
+}
+
+th, td {
+    font-family: 'Baloo 2', cursive;
+}
+
+td {
+    border-left: 1px solid lavender;
+    border-right: 1px solid lavender;
+}
+
+
+
+#highest, #lowest {
+    font-size: 23px;
+
+}
+
+#highest {
+    padding-top: 20px;
+}
+
+#lowest {
+    padding-top: 10px;
+}
+button {
+    background-color: #7A66EE;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 0;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:#9686ec;
+
+}
+
+.highlow {
+    font-size: 25px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 500;
+    color: #7A66EE;
+    display: block;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.sentence {
+    font-size: 18px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 300;
+    color:slategray;
+    text-align: center;
+}
+
+.countytable {
+    color: #7A66EE;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 500;
+    font-size: 25px;
+    padding-bottom: 3px;
+    text-decoration: underline solid #7A66EE 3px;
+}
+
+.center {
+    text-align: center;
+}

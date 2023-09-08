@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+<title>Ireland Covid-19 Data</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<!-- Load fonts from Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>      
+
+<body>
+<div class='container'>
+    <h1 style="text-align:center" id="underline">Ireland Covid-19 Data</h1>
+
+    <!-- Dropdown menu to choose a week to be displayed -->
+    <div style="padding-bottom:20px;text-align:center;">
+        <span class='sentence'>   
+            Choose a week to be displayed: 
+            <select id="weekdropdown" onchange="vax2()"></select>
+            <br>
+        </span>
+        <span id="error" style="color:red;"></span>
+    </div>
+
+    <!-- Fully Vaccinated & Vaccinations Administered -->
+    <div id="weeknumber" style="text-align:center;color:blue"></div>
+    <div class="row">
+        <div class="column">
+            <h2>Fully Vaccinated (%)</h2><br>
+            <div class="value">
+                <span id="totalvax"></span>
+                <span id="ireland" style="font-size:25px"></span>
+            </div>
+        </div>
+        <div class="column">
+            <h2>Vaccinations Administered Total | Weekly</h2>
+            <div id="totalvaxweekly" class="value"></div><br>
+        </div>
+    </div>
+
+    <!-- Different Vaccines Administered in the current week -->
+    <div id="h3"> 
+        <h3>Vaccines Administered This Week</h3>
+    </div>
+    <div id="weeklytable"></div>
+
+    <!-- Dropdown menu to switch between numbers or percentages -->
+    <div class='center' style="padding-top:50px;padding-bottom:20px">
+        <span style="font-size: 18px" class='sentence'>
+            Choose to present data as a total number or as a percentage: 
+            <select id="cumperc" onchange="vax2()">
+                <option value="num">Total Number</option>
+                <option value="per">Percentage</option>
+            </select>
+        </span>
+    </div>
+
+    <!-- Vaccines Administered per age group in the current week -->
+    <div id="h3"> 
+        <h3>Vaccines Administered This Week Per Age Group</h3>
+    </div>
+    <div id="agetable"></div>
+
+    <!-- Highest & Lowest Covid rates -->
+    <div id="highest" class='highlow'></div>
+    <div id="lowest" class='highlow'></div>
+
+    <!-- Dropdown menu to choose three counties to be displayed/compared -->
+    <div style="padding:20px 0px;">
+        <div style="font-size:18px" class='sentence'>
+            Choose up to three counties to display and compare their data: 
+            <select id="select_county"></select>
+            <select id="select_county2"></select>
+            <select id="select_county3"></select>
+            <button onclick="countydata()">Show Data</button>
+        </div>
+    </div>
+
+    <!-- Covid-19 Data for county(s) selected -->
+    <div id="countydata"></div>
+</div>
+</body>
+
+<script src="index.js"></script>
+</html>
