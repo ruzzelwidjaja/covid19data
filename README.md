@@ -4,6 +4,12 @@
 
 This project showcases Ireland's Covid-19 statistics, including vaccination data, county statistics, and more.
 
+## Tech Stack
+
+This project was built using the following technologies:
+
+- Frontend: HTML, CSS, JavaScript
+
 ## Features
 
 - Choose a week to display Covid-19 data.
